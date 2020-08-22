@@ -1,1 +1,5 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/0822/arai/WorkScene/Work.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
