@@ -67,6 +67,8 @@
     <Compile Include="Assets\0822\Scripts\InGame.cs" />
     <Compile Include="Assets\0822\Scripts\Stage.cs" />
     <Compile Include="Assets\0822\Scripts\moji.cs" />
+    <Compile Include="Assets\0822\arai\script\Drag.cs" />
+    <Compile Include="Assets\0822\arai\script\TouchEventTest.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
