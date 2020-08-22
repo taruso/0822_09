@@ -8,6 +8,8 @@ public class Stage : MonoBehaviour
     Animator animator = null;
     [SerializeField]
     GameObject ClearContainer = null;
+    [SerializeField]
+    GameObject MissContainer = null;
 
     private bool clearFlag = false;
     public bool ClearFlag
@@ -22,6 +24,7 @@ public class Stage : MonoBehaviour
     {
         animator.speed = 0.0f;
         ClearContainer.SetActive(false);
+        MissContainer.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,6 +43,10 @@ public class Stage : MonoBehaviour
         {
             animator.speed = 1.0f;
             StartCoroutine(Clear());
+        }
+        else
+        {
+            MissContainer.SetActive(true);
         }
     }
 

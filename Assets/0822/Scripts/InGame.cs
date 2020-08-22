@@ -19,6 +19,7 @@ public class InGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //StageNum = 0;
         Stages[StageNum].gameObject.SetActive(true);
     }
 
@@ -39,4 +40,8 @@ public class InGame : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
