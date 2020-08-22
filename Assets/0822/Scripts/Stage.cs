@@ -9,7 +9,12 @@ public class Stage : MonoBehaviour
     [SerializeField]
     GameObject ClearContainer = null;
 
-    public bool ClearFlag = false;
+    private bool clearFlag = false;
+    public bool ClearFlag
+    {
+        get { return clearFlag; }
+        set { clearFlag = value; }
+    }
 
 
     // Start is called before the first frame update
